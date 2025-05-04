@@ -1,0 +1,393 @@
+
+html, body {
+    margin: 0;
+    min-height: 1250px;
+    display: flex;
+    flex-direction: column;
+  }
+.barra-topo{
+    width: 100%;
+    height: 150px;
+    background-color: #5a3b21;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo black', sans-serif;
+}
+.titulo{
+    color: #e6b566;
+    padding-top: 25px;
+    font-size: 400%;
+}
+.button{
+    cursor: pointer;
+    font-size: 90px;
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 10px;
+    
+}
+.menu {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all 0.4s ease-out;
+    background-color: #b77a40;
+    color: #5a3b21;
+    width: 300px;
+    text-align: center; 
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    height: 300px;
+    right: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.menu.show {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 10px;
+    height: 400px;
+    transition: all 0.4s ease-out;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.edit{
+    text-align: center;
+    font-size: 23px;
+    color: #e6b566;
+    font-family: "Archivo Black", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+.palavra{
+    margin-bottom: 90px;
+    text-decoration: none;
+    color: inherit;
+}
+.palavra:hover{
+    color: #5a3b21;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+.modificador{
+    width: 50%;
+    max-width: 500px;
+    position: absolute;
+    left: 50px;
+    top: 210px;
+}
+.modificador img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5)
+}
+.receita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Archivo Black", "sans-serif";
+    color: #b77a40;
+}
+.receita-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  .imagem-receita, .ingredientes {
+    flex: 1;
+  }
+  .ingredientes {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+.branco{
+    background-color: white;
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    bottom: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0, 0.3);
+}
+.lista-ingredientes{
+    z-index: 1000;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 300px;
+    position: absolute;
+    top: 230px;
+}
+.ingredientes {
+    font-size: 18px;
+    position: relative; 
+    top: 290px;
+    right: 0;
+    left: 160px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 20px; 
+    display: block; 
+}
+
+.branco2{
+    background-color: white;
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 630px;
+    bottom: 200px;
+    right: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0, 0.3);
+}
+.modo-preparo{
+    z-index: 1000;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 400px;
+    color: #5a3b21;
+}
+.preparo{
+    color: #5a3b21;
+    font-size: 18px;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+.barra-fim{
+    width: 100%;
+    height: 100px;
+    background-color: #5a3b21;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 140%;
+    font-family: 'Archivo black', sans-serif;
+    margin-top: auto;
+}
+.barra-fim p{
+    margin-top: 40px;
+}
+.alimento {
+    font-family: 'Archivo Black', sans-serif;
+    color: #5a3b21;
+    z-index: 1010;
+    font-size: 65px;
+    position: absolute;
+    top: 510px;
+    left: 50px;    
+}
+.body{
+    font-family: 'Archivo black', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9f9f9;
+    z-index: 1020;
+}
+.local {
+    background: #d3d3d3;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 300px;
+    position: absolute;
+    top: 230px;
+    left: 70px;
+    z-index: 1000;
+  }
+.Icone-Favorito {
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: -740px;
+    position: absolute;
+    left: 73px;
+    z-index: 1100;
+}
+
+  .Icone-Favorito:hover {
+    transform: scale(1.2);
+    z-index: 1020;
+  }
+
+  .favorito {
+    color: red;
+    z-index: 1020;
+  }
+
+  .nao-Favorito {
+    color: #aaa;
+    z-index: 1020;
+  }
+
+
+@media (max-width: 768px){
+    html, body {
+        margin: 0;
+        min-height: 2000px;
+        display: flex;
+        flex-direction: column;
+      }
+
+.barra-topo{
+    width: 100%;
+    height: 130px;
+    background-color: #5a3b21;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo black', sans-serif;
+}
+.titulo{
+    color: #e6b566;
+    padding-top: 40px;
+    font-size: 200%;
+}
+.button{
+    cursor: pointer;
+    font-size: 50px;
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 20px;
+}
+.modificador{
+    width: 50%;
+    max-width: 500px;
+    position: absolute;
+    left: 50px;
+    top: 210px;
+}
+.modificador img{
+    width: 100%;
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5)
+}
+.Icone-Favorito {
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 750px;
+    position: absolute;
+    left: 73px;
+    z-index: 1100;
+}
+.alimento {
+    font-family: 'Archivo Black', sans-serif;
+    color: #5a3b21;
+    z-index: 1010;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+.branco{
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 30px;
+    top: 760px;
+    bottom: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0, 0.3);
+}
+.lista-ingredientes{
+    z-index: 1000;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+    position: absolute;
+    top: 700px;
+}
+.ingredientes {
+    font-size: 20px;
+    position: relative; 
+    top: 760px;
+    right: 200px;
+    left: 30px;
+    max-height: 300px; 
+    display: block; 
+}
+.branco2{
+    background-color: white;
+    width: 50%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 1300px;
+    bottom: none;
+    right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0, 0.3);
+}
+.modo-preparo{
+    z-index: 1000;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -55px;
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    color: #5a3b21;
+}
+.preparo{
+    color: #5a3b21;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Categorias</title>
+  <link rel="stylesheet" href="categorias.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <script src="categorias.js" defer></script>
+</head>
+<body>
+  <div class="barra-topo">
+    <div class="titulo">Panelinha Virtual</div>
+  </div>
+
+  <button class="button" id="botao">≡</button>
+  <div class="menu" id="menuB">
+    <div class="edit">
+      <a href="inner.html" class="palavra">Início</a>
+      <a href="favoritos.html" class="palavra">Favoritas</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Nossas Receitas</h1>
+
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">Todas</button>
+      <button class="filter-btn" data-category="doce">Doces</button>
+      <button class="filter-btn" data-category="salgado">Salgados</button>
+      <button class="filter-btn" data-category="vegetariana">Vegetariana</button>
+    </div>
+
+    <div class="recipes">
+      <div class="recipe-card" data-category="doce">
+        <a href="bolo.html"><img src="bolodechoc.jpg" alt=""></a>
+        <h3>Bolo de Chocolate</h3>
+        <p>Um delicioso bolo de chocolate caseiro</p>
+      </div>
+
+      <div class="recipe-card" data-category="doce">
+        <a href="pudim.html"><img src="pudim.jpg" alt=""></a>
+        <h3>Pudim</h3>
+        <p>Pudim cremoso de leite condensado</p>
+      </div>
+
+      <div class="recipe-card" data-category="doce">
+        <a href="arroz.html"><img src="arrozdoce.jpg" alt=""></a>
+        <h3>Arroz Doce</h3>
+        <p>Arroz doce cremoso com canela</p>
+      </div>
+
+      <div class="recipe-card" data-category="salgado">
+        <a href="carreteiro.html"><img src="arrozcarreteiro.jpg" alt=""></a>
+        <h3>Arroz Carreteiro</h3>
+        <p>Arroz carreteiro com carne seca</p>
+      </div>
+
+      <div class="recipe-card" data-category="salgado">
+        <a href="lasanha.html"><img src="lasanhinha.jpg" alt=""></a>
+        <h3>Lasanha</h3>
+        <p>Uma deliciosa lasanha</p>
+      </div>
+
+      <div class="recipe-card" data-category="salgado">
+        <a href="file.html"><img src="filezin.jpg" alt=""></a>
+        <h3>Filé de Peixe</h3>
+        <p>Um delicioso Filé de peixe</p>
+      </div>
+
+      <div class="recipe-card" data-category="vegetariana">
+        <a href="coxinha.html"><img src="coxinha.jpg" alt=""></a>
+        <h3>Coxinha vegana</h3>
+        <p>Uma incrivel coxinha vegana</p>
+      </div>
+
+      <div class="recipe-card" data-category="vegetariana">
+        <a href="torta.html"><img src="torta.jpg" alt=""></a>
+        <h3>Torta de maçã</h3>
+        <p>Uma deliciosa torta de maçã</p>
+      </div>
+
+      <div class="recipe-card" data-category="vegetariana">
+        <a href="rato.html"><img src="ratatouille.jpg" alt=""></a>
+        <h3>ratatouille</h3>
+        <p>Uma deliciosa receita francesa</p>
+      </div>
+
+      
+
+    </div>
+  </div>
+<div class="espaco"></div>
+</body>
+</html>

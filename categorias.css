@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: bisque;
+
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .espaco{
+    height: 200px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5A3B21;
+    font-size: 40px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #E6B566;
+    color: #5A3B21;
+  }
+  .filter-btn:hover{
+    transform: scale(1.05);
+  }
+  .filter-btn.active {
+    background-color: #B77A40;
+    color: #FFFFFF;
+  }
+  .recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    flex: 0 1 300px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .recipe-card img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+  .barra-topo{
+    width: 100%;
+    height: 150px;
+    background-color: #5a3b21;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo black', sans-serif;
+}
+.titulo{
+    color: #e6b566;
+    padding-top: 25px;
+    font-size: 400%;
+}
+.button{
+  cursor: pointer;
+  font-size: 90px;
+  border: none;
+  background: none;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  z-index: 1000;
+  right: 15px;
+  top: 10px;
+}
+.menu {
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: all 0.4s ease-out;
+  background-color: #b77a40;
+  color: #5a3b21;
+  width: 300px;
+  text-align: center; 
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  height: 300px;
+  right: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+}
+.menu.show {
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 10px;
+  transition: all 0.4s ease-out;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.edit{
+  text-align: center;
+  font-size: 23px;
+  color: #e6b566;
+  font-family: "Archivo Black", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 80px;
+  gap: -30px;
+}
+.palavra{
+  margin-bottom: 90px;
+  text-decoration: none;
+  color: inherit;
+}
+.palavra:hover{
+  color: #5a3b21;
+}
+@media (max-width: 768px){
+  .titulo{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .button{
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,164 @@
+.espaco-fim{
+    height: 00px;
+    position: absolute;
+    bottom: 0;
+}
+
+body{
+    background-color: bisque;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.barra-topo {
+    width: 100%;
+    height: 150px;
+    background-color: #5a3b21;
+    position: static;
+    top: 0;
+    left: 0;
+}
+.titulo{
+    color: #e6b566;
+    font-size: 400%;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    padding-top: 25px;
+}
+.button{
+    cursor: pointer;
+    font-size: 90px;
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 5px;
+}
+.menu {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all 0.4s ease-out;
+    background-color: #b77a40;
+    color: #5a3b21;
+    width: 300px;
+    text-align: center; 
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    height: 300px;
+    right: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden;
+}
+.menu.show {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 10px;
+    height: 300px;
+    transition: all 0.4s ease-out;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.edit{
+    text-align: center;
+    font-size: 23px;
+    color: #e6b566;
+    font-family: "Archivo Black", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    gap: -30px;
+}
+.palavra{
+    margin-bottom: 90px;
+    text-decoration: none;
+    color: inherit;
+}
+.palavra:hover{
+    color: #5a3b21;
+}
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}  
+.subtitulo{
+    font-family: 'Archivo black', sans-serif;
+    text-align: center;
+    color: #b77a40;
+    font-size: 300%;
+    padding-top: 70px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+}
+  
+.card-receita {
+    text-decoration: none;
+    font-family: 'Archivo black', sans-serif;
+    color: #5a3b21;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+  
+.card-receita img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+  
+.card-receita:hover {
+    transform: scale(1.05);
+}
+.mensagem{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    margin-top: 100px;
+}
+@media (max-width: 768px){
+   .titulo{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+   }
+   .button{
+    font-size: 50px;
+    position: absolute;
+    top: 25px;
+    
+   }
+    .card-receita{
+        width: 300px;
+    }
+    .card-receita img{
+        height: 200px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+}

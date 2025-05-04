@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.Populares{
+    color: #5a3b21;
+    font-size: 450%;
+    font-family: "Archivo Black", "sans-serif";
+    text-align: center;
+    padding-top: 100px;
+}
+.barra-topo {
+    width: 100%;
+    height: 150px;
+    background-color: #5a3b21;
+    position: static;
+    top: 0;
+    left: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+}
+
+.titulo{
+    color: #e6b566;
+    font-size: 400%;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    padding-top: 25px;
+}
+.barra-clara{
+    width: 100%;
+    position:static;
+    background-color: #e6b566;
+    top: 0px;
+    left: 0;
+    height: 400px;
+}
+.imagem{
+    width: 532px;
+    height: auto;
+    float: right;
+}
+.r{
+    font-family: "Archivo Black", "sans-serif";
+    font-size: 400%;
+    color: #b77a40;
+    text-align: center;
+    padding-top: 100px;
+}
+.s{
+    color: #5a3b21;
+    font-size: 110px;
+    font-family: "Archivo Black", "sans-serif";
+    text-align: center;
+    margin-top: -55px;
+    
+}
+.f{
+    color: #f2e6d9;
+    font-family: "Archivo Black", "sans-serif";
+    font-size: 200%;
+}
+.pedaco{
+    height: 30px;
+    width: 200px;
+    background-color: #b77a40;
+    border-radius: 10px;
+    position: absolute;
+    top: 470px;
+    left: 380px;
+}
+.receita{
+    font-size: 125%;
+    font-family: "Archivo Black", "sans-serif";
+    color: white;
+    text-align: center;
+}
+.carrossel{
+    width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    margin: 100px auto;
+    
+}
+.carrossel-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.barra-inferior {
+    width: 100%;
+    height: 100px;
+    background-color: #5a3b21; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    bottom: 0;
+}
+  
+.texto {
+    color: white;
+    font-size: 120%;
+}
+.carrossel:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.pedaco:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.button{
+    cursor: pointer;
+    font-size: 90px;
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 10px;
+}
+.menu {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: all 0.4s ease-out;
+    background-color: #b77a40;
+    color: #5a3b21;
+    width: 300px;
+    text-align: center; 
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    height: 300px;
+    right: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden;
+}
+.menu.show {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.edit{
+    text-align: center;
+    font-size: 23px;
+    color: #e6b566;
+    font-family: "Archivo Black", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    gap: -30px;
+}
+.palavra{
+    margin-bottom: 90px;
+    text-decoration: none;
+    color: inherit;
+}
+.palavra:hover{
+    color: #5a3b21;
+}
+@media (max-width: 768px){
+body{
+    background-color: bisque;
+}
+.titulo{
+    color: #e6b566;
+    font-size: 200%;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    padding-top: 50px;
+}
+.button{
+    cursor: pointer;
+    font-size: 50px;
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 32px;
+    z-index: 1001;
+}
+
+.barra-clara{
+   display: none;
+}
+.pedaco{
+    display: none;
+}
+
+.carrossel{
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    margin: 100px auto;
+}
+.Populares{
+    color: #5a3b21;
+    font-size: 300%;
+    font-family: "Archivo Black", "sans-serif";
+    text-align: center;
+    padding-top: 100px;
+}
+
+}
