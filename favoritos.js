@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("favoritos-container");
   
     const receitas = [
@@ -87,5 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
     botao.addEventListener("click", () => {
       menu.classList.toggle("show");
     });
-  });
+
   
